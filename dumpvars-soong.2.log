@@ -1,0 +1,28 @@
+2023/09/30 14:42:30.662115 build/soong/cmd/soong_ui/main.go:204: Detected 15.5 GB total RAM
+2023/09/30 14:42:30.662129 build/soong/cmd/soong_ui/main.go:205: Parallelism (local/remote/highmem): 8/0/1
+2023/09/30 14:42:30.662134 build/soong/cmd/soong_ui/main.go:619: Current file limits: 1024 soft, 1048576 hard
+2023/09/30 14:42:30.662139 build/soong/cmd/soong_ui/main.go:232: Took 27ms to start up.
+2023/09/30 14:42:30.946869 build/soong/ui/build/sandbox_linux.go:123: [prebuilts/build-tools/linux-x86/bin/nsjail -H android-build -e -u nobody -g nogroup -R / -B /tmp -B /home/rahul/work -B /home/rahul/work/out --disable_clone_newcgroup -- /bin/bash -c if [ $(hostname) == "android-build" ]; then echo "Android" "Success"; else echo Failure; fi]
+2023/09/30 14:42:30.950375 build/soong/ui/build/sandbox_linux.go:130: Build sandboxing disabled due to nsjail error.
+2023/09/30 14:42:30.950408 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Mode: STANDALONE_ONCE
+2023/09/30 14:42:30.950415 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Jail parameters: hostname:'android-build', chroot:'', process:'/bin/bash', bind:[::]:0, max_conns:0, max_conns_per_ip:0, time_limit:0, personality:0, daemonize:false, clone_newnet:true, clone_newuser:true, clone_newns:true, clone_newpid:true, clone_newipc:true, clone_newuts:true, clone_newcgroup:false, clone_newtime:false, keep_caps:false, disable_no_new_privs:false, max_cpus:0
+2023/09/30 14:42:30.950419 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Mount: '/' flags:MS_RDONLY type:'tmpfs' options:'' dir:true
+2023/09/30 14:42:30.950423 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Mount: '/' -> '/' flags:MS_RDONLY|MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+2023/09/30 14:42:30.950427 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Mount: '/tmp' -> '/tmp' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+2023/09/30 14:42:30.950451 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Mount: '/home/rahul/work' -> '/home/rahul/work' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+2023/09/30 14:42:30.950454 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Mount: '/home/rahul/work/out' -> '/home/rahul/work/out' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+2023/09/30 14:42:30.950456 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Mount: '/proc' flags:MS_RDONLY type:'proc' options:'' dir:true
+2023/09/30 14:42:30.950459 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Uid map: inside_uid:65534 outside_uid:0 count:1 newuidmap:false
+2023/09/30 14:42:30.950461 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T14:42:30+0530][3264] logParams():267 Process will be UID/EUID=0 in the global user namespace, and will have user root-level access to files
+2023/09/30 14:42:30.950464 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T14:42:30+0530] Gid map: inside_gid:65534 outside_gid:0 count:1 newgidmap:false
+2023/09/30 14:42:30.950466 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T14:42:30+0530][3264] logParams():277 Process will be GID/EGID=0 in the global user namespace, and will have group root-level access to files
+2023/09/30 14:42:30.950468 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T14:42:30+0530][1] createDirRecursively():149 openat('5', 'rahul', O_DIRECTORY | O_CLOEXEC): Permission denied
+2023/09/30 14:42:30.950471 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T14:42:30+0530][1] mountPt():145 Couldn't create upper directories for '/run/user//nsjail.0.root//home/rahul/work'
+2023/09/30 14:42:30.950487 build/soong/ui/build/sandbox_linux.go:133: [E][2023-09-30T14:42:30+0530][1] initCloneNs():399 Couldn't mount '/home/rahul/work'
+2023/09/30 14:42:30.950489 build/soong/ui/build/sandbox_linux.go:133: [F][2023-09-30T14:42:30+0530][1] runChild():469 Launching child process failed
+2023/09/30 14:42:30.950492 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T14:42:30+0530][3264] runChild():489 Received error message from the child process before it has been executed
+2023/09/30 14:42:30.950500 build/soong/ui/build/sandbox_linux.go:133: [E][2023-09-30T14:42:30+0530][3264] standaloneMode():272 Couldn't launch the child process
+2023/09/30 14:42:30.950504 build/soong/ui/build/sandbox_linux.go:139: nsjail failed with exit status 255
+2023/09/30 14:42:30.950511 build/soong/ui/build/exec.go:64: "dumpvars" executing "prebuilts/build-tools/linux-x86/bin/ckati" [prebuilts/build-tools/linux-x86/bin/ckati -f build/make/core/config.mk --color_warnings --kati_stats dump-many-vars MAKECMDGOALS=]
+2023/09/30 14:42:30.965645 build/soong/ui/build/exec.go:74: "dumpvars" finished with exit code 1 (15ms real, 13ms user, 2ms system, 244MB maxrss)
+2023/09/30 14:42:30.965670 build/soong/ui/build/exec.go:127: dumpvars failed with: exit status 1

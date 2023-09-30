@@ -1,0 +1,77 @@
+2023/09/30 11:55:13.153768 build/soong/cmd/soong_ui/main.go:204: Detected 15.5 GB total RAM
+2023/09/30 11:55:13.153784 build/soong/cmd/soong_ui/main.go:205: Parallelism (local/remote/highmem): 8/0/1
+2023/09/30 11:55:13.153789 build/soong/cmd/soong_ui/main.go:619: Current file limits: 1024 soft, 1048576 hard
+2023/09/30 11:55:13.153795 build/soong/cmd/soong_ui/main.go:232: Took 27ms to start up.
+2023/09/30 11:55:13.433759 build/soong/ui/build/sandbox_linux.go:123: [prebuilts/build-tools/linux-x86/bin/nsjail -H android-build -e -u nobody -g nogroup -R / -B /tmp -B /home/rahul/work -B /home/rahul/work/out --disable_clone_newcgroup -- /bin/bash -c if [ $(hostname) == "android-build" ]; then echo "Android" "Success"; else echo Failure; fi]
+2023/09/30 11:55:13.437376 build/soong/ui/build/sandbox_linux.go:130: Build sandboxing disabled due to nsjail error.
+2023/09/30 11:55:13.437401 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Mode: STANDALONE_ONCE
+2023/09/30 11:55:13.437429 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Jail parameters: hostname:'android-build', chroot:'', process:'/bin/bash', bind:[::]:0, max_conns:0, max_conns_per_ip:0, time_limit:0, personality:0, daemonize:false, clone_newnet:true, clone_newuser:true, clone_newns:true, clone_newpid:true, clone_newipc:true, clone_newuts:true, clone_newcgroup:false, clone_newtime:false, keep_caps:false, disable_no_new_privs:false, max_cpus:0
+2023/09/30 11:55:13.437435 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Mount: '/' flags:MS_RDONLY type:'tmpfs' options:'' dir:true
+2023/09/30 11:55:13.437439 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Mount: '/' -> '/' flags:MS_RDONLY|MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+2023/09/30 11:55:13.437443 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Mount: '/tmp' -> '/tmp' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+2023/09/30 11:55:13.437446 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Mount: '/home/rahul/work' -> '/home/rahul/work' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+2023/09/30 11:55:13.437449 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Mount: '/home/rahul/work/out' -> '/home/rahul/work/out' flags:MS_BIND|MS_REC|MS_PRIVATE type:'' options:'' dir:true
+2023/09/30 11:55:13.437452 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Mount: '/proc' flags:MS_RDONLY type:'proc' options:'' dir:true
+2023/09/30 11:55:13.437455 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Uid map: inside_uid:65534 outside_uid:0 count:1 newuidmap:false
+2023/09/30 11:55:13.437458 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T11:55:13+0530][91416] logParams():267 Process will be UID/EUID=0 in the global user namespace, and will have user root-level access to files
+2023/09/30 11:55:13.437461 build/soong/ui/build/sandbox_linux.go:133: [I][2023-09-30T11:55:13+0530] Gid map: inside_gid:65534 outside_gid:0 count:1 newgidmap:false
+2023/09/30 11:55:13.437464 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T11:55:13+0530][91416] logParams():277 Process will be GID/EGID=0 in the global user namespace, and will have group root-level access to files
+2023/09/30 11:55:13.437466 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T11:55:13+0530][1] createDirRecursively():149 openat('5', 'rahul', O_DIRECTORY | O_CLOEXEC): Permission denied
+2023/09/30 11:55:13.437469 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T11:55:13+0530][1] mountPt():145 Couldn't create upper directories for '/run/user//nsjail.0.root//home/rahul/work'
+2023/09/30 11:55:13.437472 build/soong/ui/build/sandbox_linux.go:133: [E][2023-09-30T11:55:13+0530][1] initCloneNs():399 Couldn't mount '/home/rahul/work'
+2023/09/30 11:55:13.437475 build/soong/ui/build/sandbox_linux.go:133: [F][2023-09-30T11:55:13+0530][1] runChild():469 Launching child process failed
+2023/09/30 11:55:13.437477 build/soong/ui/build/sandbox_linux.go:133: [W][2023-09-30T11:55:13+0530][91416] runChild():489 Received error message from the child process before it has been executed
+2023/09/30 11:55:13.437485 build/soong/ui/build/sandbox_linux.go:133: [E][2023-09-30T11:55:13+0530][91416] standaloneMode():272 Couldn't launch the child process
+2023/09/30 11:55:13.437489 build/soong/ui/build/sandbox_linux.go:139: nsjail failed with exit status 255
+2023/09/30 11:55:13.437497 build/soong/ui/build/exec.go:64: "dumpvars" executing "prebuilts/build-tools/linux-x86/bin/ckati" [prebuilts/build-tools/linux-x86/bin/ckati -f build/make/core/config.mk --color_warnings --kati_stats dump-many-vars MAKECMDGOALS=]
+2023/09/30 11:55:13.810440 build/soong/ui/build/exec.go:74: "dumpvars" finished with exit code 0 (373ms real, 314ms user, 61ms system, 269MB maxrss)
+2023/09/30 11:55:13.810486 build/soong/ui/build/dumpvars.go:123: 2ND_TARGET_GCC_VERSION 4.9
+2023/09/30 11:55:13.810492 build/soong/ui/build/dumpvars.go:123: ANDROID_BUILD_PATHS /home/rahul/work/out/host/linux-x86/bin:/home/rahul/work/out/host/linux-x86/bin
+2023/09/30 11:55:13.810497 build/soong/ui/build/dumpvars.go:123: COMMON_LUNCH_CHOICES aosp_avicii-eng aosp_avicii-user aosp_avicii-userdebug aosp_cf_arm64_auto-userdebug aosp_cf_arm64_phone-userdebug aosp_cf_x86_64_foldable-userdebug aosp_cf_x86_64_only_phone_hsum-userdebug aosp_cf_x86_64_pc-userdebug aosp_cf_x86_64_phone-userdebug aosp_cf_x86_64_tv-userdebug aosp_cf_x86_auto-userdebug aosp_cf_x86_phone-userdebug aosp_cf_x86_tv-userdebug aosp_cheetah-userdebug aosp_cloudripper-userdebug aosp_panther-userdebug aosp_ravenclaw-userdebug arm_krait-eng arm_v7_v8-eng armv8-eng armv8_cortex_a55-eng armv8_kryo385-eng sdk_car_arm-userdebug sdk_car_arm64-userdebug sdk_car_portrait_x86_64-userdebug sdk_car_x86-userdebug sdk_car_x86_64-userdebug sdk_pc_x86_64-userdebug silvermont-eng
+2023/09/30 11:55:13.810500 build/soong/ui/build/dumpvars.go:123: HOST_PREBUILT_TAG linux-x86
+2023/09/30 11:55:13.810503 build/soong/ui/build/dumpvars.go:123: print 
+2023/09/30 11:55:13.810506 build/soong/ui/build/dumpvars.go:123: PRODUCT_OUT /home/rahul/work/out/target/product/avicii
+2023/09/30 11:55:13.810509 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_ARCH arm
+2023/09/30 11:55:13.810511 build/soong/ui/build/dumpvars.go:123: TARGET_ARCH arm64
+2023/09/30 11:55:13.810514 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_VARIANT userdebug
+2023/09/30 11:55:13.810517 build/soong/ui/build/dumpvars.go:123: TARGET_DEVICE avicii
+2023/09/30 11:55:13.810533 build/soong/ui/build/dumpvars.go:123: TARGET_GCC_VERSION 4.9
+2023/09/30 11:55:13.810536 build/soong/ui/build/dumpvars.go:123: TARGET_PLATFORM_VERSION TP1A
+2023/09/30 11:55:13.810539 build/soong/ui/build/dumpvars.go:123: TARGET_PRODUCT aosp_avicii
+2023/09/30 11:55:13.810541 build/soong/ui/build/dumpvars.go:123: ANDROID_CLANG_PREBUILTS prebuilts/clang/host/linux-x86
+2023/09/30 11:55:13.810558 build/soong/ui/build/dumpvars.go:123: ANDROID_GCC_PREBUILTS prebuilts/gcc/linux-x86
+2023/09/30 11:55:13.810560 build/soong/ui/build/dumpvars.go:123: ANDROID_JAVA_HOME prebuilts/jdk/jdk11/linux-x86
+2023/09/30 11:55:13.810563 build/soong/ui/build/dumpvars.go:123: ANDROID_JAVA_TOOLCHAIN prebuilts/jdk/jdk11/linux-x86/bin
+2023/09/30 11:55:13.810566 build/soong/ui/build/dumpvars.go:123: ANDROID_PREBUILTS prebuilt/linux-x86
+2023/09/30 11:55:13.810568 build/soong/ui/build/dumpvars.go:123: HOST_OUT /home/rahul/work/out/host/linux-x86
+2023/09/30 11:55:13.810571 build/soong/ui/build/dumpvars.go:123: HOST_OUT_TESTCASES /home/rahul/work/out/host/linux-x86/testcases
+2023/09/30 11:55:13.810574 build/soong/ui/build/dumpvars.go:123: print 
+2023/09/30 11:55:13.810576 build/soong/ui/build/dumpvars.go:123: PRODUCT_OUT /home/rahul/work/out/target/product/avicii
+2023/09/30 11:55:13.810579 build/soong/ui/build/dumpvars.go:123: SOONG_HOST_OUT /home/rahul/work/out/host/linux-x86
+2023/09/30 11:55:13.810582 build/soong/ui/build/dumpvars.go:123: TARGET_OUT_SHARED_LIBRARIES_UNSTRIPPED /home/rahul/work/out/target/product/avicii/symbols/system/lib
+2023/09/30 11:55:13.810585 build/soong/ui/build/dumpvars.go:123: TARGET_OUT_TESTCASES /home/rahul/work/out/target/product/avicii/testcases
+2023/09/30 11:55:13.810593 build/soong/ui/build/dumpvars.go:123: TARGET_OUT_UNSTRIPPED /home/rahul/work/out/target/product/avicii/symbols
+2023/09/30 11:55:13.810596 build/soong/ui/build/dumpvars.go:123: TARGET_OUT_VENDOR_SHARED_LIBRARIES_UNSTRIPPED /home/rahul/work/out/target/product/avicii/symbols/vendor/lib
+2023/09/30 11:55:13.810599 build/soong/ui/build/dumpvars.go:123: PLATFORM_VERSION_CODENAME REL
+2023/09/30 11:55:13.810602 build/soong/ui/build/dumpvars.go:123: PLATFORM_VERSION 13
+2023/09/30 11:55:13.810604 build/soong/ui/build/dumpvars.go:123: PRODUCT_INCLUDE_TAGS 
+2023/09/30 11:55:13.810607 build/soong/ui/build/dumpvars.go:123: CUSTOM_VERSION ProjectElixir_3.12_avicii-13-20230930-0625-UNOFFICIAL
+2023/09/30 11:55:13.810610 build/soong/ui/build/dumpvars.go:123: TARGET_PRODUCT aosp_avicii
+2023/09/30 11:55:13.810612 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_VARIANT userdebug
+2023/09/30 11:55:13.810615 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_TYPE release
+2023/09/30 11:55:13.810617 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_APPS 
+2023/09/30 11:55:13.810620 build/soong/ui/build/dumpvars.go:123: TARGET_BUILD_UNBUNDLED 
+2023/09/30 11:55:13.810623 build/soong/ui/build/dumpvars.go:123: TARGET_ARCH arm64
+2023/09/30 11:55:13.810625 build/soong/ui/build/dumpvars.go:123: TARGET_ARCH_VARIANT armv8-a
+2023/09/30 11:55:13.810628 build/soong/ui/build/dumpvars.go:123: TARGET_CPU_VARIANT generic
+2023/09/30 11:55:13.810630 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_ARCH arm
+2023/09/30 11:55:13.810633 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_ARCH_VARIANT armv8-2a
+2023/09/30 11:55:13.810636 build/soong/ui/build/dumpvars.go:123: TARGET_2ND_CPU_VARIANT generic
+2023/09/30 11:55:13.810638 build/soong/ui/build/dumpvars.go:123: HOST_OS linux
+2023/09/30 11:55:13.810641 build/soong/ui/build/dumpvars.go:123: BUILD_ID TQ3C.230901.001.B1
+2023/09/30 11:55:13.810643 build/soong/ui/build/dumpvars.go:123: AUX_OS_VARIANT_LIST 
+2023/09/30 11:55:13.810646 build/soong/ui/build/dumpvars.go:123: PRODUCT_SOONG_NAMESPACES hardware/oplus/overlay/qssi device/oneplus/avicii hardware/oplus vendor/qcom/opensource/usb/etc vendor/oneplus/avicii hardware/qcom-caf/sm8250 vendor/qcom/opensource/commonsys/display vendor/qcom/opensource/commonsys-intf/display vendor/qcom/opensource/display vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um vendor/qcom/opensource/dataservices hardware/nxp hardware/qcom-caf/common/fwk-detect
+2023/09/30 11:55:13.810649 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_PREFER 
+2023/09/30 11:55:13.810652 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_TARGET_BUILD_RELEASE 
+2023/09/30 11:55:13.810654 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_USE_SOURCE_CONFIG_VAR 
+2023/09/30 11:55:13.810657 build/soong/ui/build/dumpvars.go:123: SOONG_SDK_SNAPSHOT_VERSION 

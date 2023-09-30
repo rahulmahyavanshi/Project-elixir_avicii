@@ -1,0 +1,14 @@
+device/generic/art/arm_krait/AndroidProducts.mk
+device/generic/art/arm_v7_v8/AndroidProducts.mk
+device/generic/art/armv8/AndroidProducts.mk
+device/generic/art/armv8_cortex_a55/AndroidProducts.mk
+device/generic/art/armv8_kryo385/AndroidProducts.mk
+device/generic/art/art_module/AndroidProducts.mk
+device/generic/art/silvermont/AndroidProducts.mk
+device/generic/common/AndroidProducts.mk
+device/generic/goldfish/AndroidProducts.mk
+device/generic/goldfish/car/AndroidProducts.mk
+device/generic/goldfish/pc/AndroidProducts.mk
+device/google/cuttlefish/AndroidProducts.mk
+device/google/pantah/AndroidProducts.mk
+device/oneplus/avicii/AndroidProducts.mk

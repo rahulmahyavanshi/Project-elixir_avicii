@@ -1,0 +1,20 @@
+1696065274490964 B microfactory /home/rahul/work/out/microfactory_Linux
+1696065274490985 B findDeps
+1696065274491099 E findDeps
+1696065274491116 B check compile github.com/google/blueprint/microfactory
+1696065274491159 E check compile github.com/google/blueprint/microfactory
+1696065274491163 B check compile main
+1696065274491185 E check compile main
+1696065274491188 B check link main
+1696065274491194 E check link main
+1696065274491203 B findDeps
+1696065274491544 E findDeps
+1696065274491567 B check compile android/soong/androidmk/parser
+1696065274491671 E check compile android/soong/androidmk/parser
+1696065274491676 B check compile android/soong/mk2rbc
+1696065274491882 E check compile android/soong/mk2rbc
+1696065274491887 B check compile main
+1696065274491921 E check compile main
+1696065274491923 B check link main
+1696065274491930 E check link main
+1696065274491933 E microfactory /home/rahul/work/out/microfactory_Linux
